@@ -1,0 +1,5 @@
+#arquivos de sessão
+*.json
+
+#aquivos de login
+*.txt

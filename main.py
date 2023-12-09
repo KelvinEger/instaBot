@@ -18,8 +18,8 @@ def hasInfoLogin(sUsername):
         
 
 def doLogin():
-    username          = "passarosembando"
-    password          = "#VDCQN0Bb"
+    username          = '' #ler de arquivo de config
+    password          = '' #ler de arquivo de config
     bRealizouLogin    = False
 
     oInstagram = Client(delay_range = [2, 8]) # Delay de requisições para dar uma mascarada
