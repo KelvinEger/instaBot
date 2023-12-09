@@ -18,20 +18,27 @@ def hasInfoLogin(sUsername):
         
 
 def doLogin():
-    username          = '' #ler de arquivo de config
-    password          = '' #ler de arquivo de config
-    bRealizouLogin    = False
+    with open('infologin.txt', 'r') as arquivo:
+        aLinhas = arquivo.readlines()
+
+    username       = aLinhas[0]
+    password       = aLinhas[1]
+    bRealizouLogin = False
 
     oInstagram = Client(delay_range = [2, 8]) # Delay de requisições para dar uma mascarada
 
     if(hasInfoLogin(username)) :
-        print("Tem informações de login salvas. Tentando login com sessão já logada!")
+        print("Existem informações de login salvas. Tentando login com sessão já logada!")
 
         oInstagram.load_settings(f"session_{username}.json") # Informações de uma sessão previamente existente
-        bRealizouLogin = oInstagram.login(username, password)
+
+        try:
+            bRealizouLogin = oInstagram.login(username, password)
+        except Exception as xErro:
+            print(f"Erro ao realizar login. Erro: {xErro}")
         
         if(bRealizouLogin):
-            print('novo login realizado com sessão prévia')
+            print('Login realizado com informações de sessão salvas!')
         
             try:
                 oInstagram.get_timeline_feed()
