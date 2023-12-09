@@ -4,7 +4,7 @@ Bot simples para interações básicas no Instagram
 ### Documentação
 * [Index](https://subzeroid.github.io/instagrapi/)
 
-##$ Boas práticas
+### Boas práticas
 * [Best Practices](https://subzeroid.github.io/instagrapi/usage-guide/best-practices.html)
 
 
