@@ -2,10 +2,10 @@
 Bot simples para interações básicas no Instagram
 
 ### Documentação
-* [Index](https://subzeroid.github.io/instagrapi/)
+* [Acessar](https://subzeroid.github.io/instagrapi/)
 
 ### Boas práticas
-* [Best Practices](https://subzeroid.github.io/instagrapi/usage-guide/best-practices.html)
+* [Boas práticas](https://subzeroid.github.io/instagrapi/usage-guide/best-practices.html)
 
 
 ### instagrapi - API não oficial para interações no Instagram com Python
