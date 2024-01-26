@@ -1,5 +1,3 @@
-#arquivos de sessão
-*.json
-
-#aquivos de login
-*.txt
+data/
+.vscode/
+__pycache__/
